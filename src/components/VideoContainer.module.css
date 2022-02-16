@@ -1,0 +1,19 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.containerMain {
+  background-color: #343434;
+  margin: 0 10% 0 10%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
+  column-gap: 20px;
+  padding: 5%;
+}
+
+.containerMain aside {
+  display: inline-block;
+  height: 600px;
+  overflow: scroll;
+}

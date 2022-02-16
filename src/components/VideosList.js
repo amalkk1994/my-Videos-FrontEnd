@@ -3,15 +3,10 @@ import VideoFrame from "./VideoFrame";
 const VideosList = (props) => {
   return (
     <div>
-      {props.videos.map((video) => {
-        return (
-          <VideoFrame
-            title={video.title}
-            videoId={video.videoId}
-            key={video.videoId}
-          />
-        );
-      })}
+      {props.videos.length &&
+        props.videos.map((video) => {
+          return <VideoFrame video={video} key={video.videoId} />;
+        })}
     </div>
   );
 };
