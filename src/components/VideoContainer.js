@@ -32,8 +32,9 @@ const VideoContainer = () => {
       });
   }, []);
 
-  function loadClickedVideo(event) {
-    console.log("event", event);
+  function loadClickedVideo(video) {
+    console.log("video::", video);
+    setCurrentVideo(video);
   }
 
   console.log("loaded videos", loadedVideos);
