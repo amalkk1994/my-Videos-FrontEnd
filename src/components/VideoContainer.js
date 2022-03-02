@@ -50,7 +50,6 @@ const VideoContainer = () => {
     return (
       <div className={classes.containerMain}>
         <section>
-          <h1>My Videos</h1>
           <VideoFrame
             width="500"
             height="300"
@@ -60,6 +59,7 @@ const VideoContainer = () => {
           {/* <VideosList videos={loadedVideos} /> */}
         </section>
         <aside>
+          <h2>RECENT UPLOADS</h2>
           <VideoThumbnailList
             videos={loadedVideos}
             onClick={loadClickedVideo}

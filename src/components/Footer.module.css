@@ -1,0 +1,11 @@
+.footerStyled {
+  height: 100px;
+  background-color: #343434;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+.footerStyled p {
+  text-align: center;
+  color: white;
+}

@@ -1,0 +1,27 @@
+.navBar {
+  padding: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: rgba(256, 256, 256, 1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.navBar a {
+  text-decoration: none;
+}
+
+.navBar h4 {
+  display: inline-block;
+  margin-right: 60px;
+  color: black;
+}
+
+.navBar h1 {
+  margin-left: 20px;
+}
+
+.navLinks {
+  align-self: flex-end;
+}
