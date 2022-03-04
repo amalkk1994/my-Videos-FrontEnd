@@ -8,6 +8,7 @@ const VideoThumbnail = (props) => {
     <div
       className={classes.card}
       onClick={() => triggerOnClickFunc(props.video)}
+      style={props.style}
     >
       <img src={props.video.thumbnailMedium} alt={props.video.title}></img>
       <div className={classes.description}>

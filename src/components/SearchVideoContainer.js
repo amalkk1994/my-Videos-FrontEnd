@@ -1,5 +1,6 @@
 import { useState } from "react";
 import VideoThumbnailList from "./VideoThumbnailList";
+import classes from "./SearchVideoContainer.module.css";
 
 const SearchVideoContainer = (props) => {
   const [filteredVideos, setFilteredVideos] = useState(props.videos);
@@ -23,12 +24,23 @@ const SearchVideoContainer = (props) => {
     }
   };
 
+  const style = { flexDirection: "column", width: "200px" };
+
   return (
     <>
-      <h1>All Videos</h1>
-      <input type="search" id="searchBar" onChange={filterData} />
-      <section>
-        <VideoThumbnailList videos={filteredVideos} onClick={props.onClick} />
+      <h1 className={classes.searchHeader}>ALL VIDEOS</h1>
+      <input
+        type="search"
+        id="searchBar"
+        onChange={filterData}
+        className={classes.searchBar}
+      />
+      <section className={classes.searchContainer}>
+        <VideoThumbnailList
+          videos={filteredVideos}
+          onClick={props.onClick}
+          style={style}
+        />
       </section>
     </>
   );

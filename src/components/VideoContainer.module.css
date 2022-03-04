@@ -18,3 +18,11 @@
   display: inline-block;
   width: 500px;
 }
+
+.searchContainerSection {
+  margin-top: 40px;
+}
+
+.recentUploadsTitle {
+  font-size: 18px;
+}

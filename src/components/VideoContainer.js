@@ -60,7 +60,7 @@ const VideoContainer = () => {
             />
             {/* <VideosList videos={loadedVideos} /> */}
           </section>
-          <section>
+          <section className={classes.searchContainerSection}>
             <SearchVideoContainer
               videos={loadedVideos}
               onClick={loadClickedVideo}
@@ -68,7 +68,7 @@ const VideoContainer = () => {
           </section>
         </div>
         <aside>
-          <h2>RECENT UPLOADS</h2>
+          <h2 className={classes.recentUploadsTitle}>RECENT UPLOADS</h2>
           <VideoThumbnailList
             videos={loadedVideos}
             onClick={loadClickedVideo}
