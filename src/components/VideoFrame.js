@@ -9,7 +9,7 @@ const VideoFrame = (props) => {
         src={"https://www.youtube.com/embed/" + props.video.videoId}
       ></iframe>
       <h2>{props.video.title}</h2>
-      <h3>{props.video.description}</h3>
+      <p>{props.video.description}</p>
     </div>
   );
 };

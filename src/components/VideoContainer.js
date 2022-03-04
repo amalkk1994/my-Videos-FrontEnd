@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 // import VideosList from "./VideosList";
 import VideoThumbnailList from "./VideoThumbnailList";
 import VideoFrame from "./VideoFrame";
+import SearchVideoContainer from "./SearchVideoContainer";
 import classes from "./VideoContainer.module.css";
 
 const VideoContainer = () => {
@@ -49,15 +50,23 @@ const VideoContainer = () => {
   if (loadedVideos.length !== 0 && currentVideo != null) {
     return (
       <div className={classes.containerMain}>
-        <section>
-          <VideoFrame
-            width="500"
-            height="300"
-            video={currentVideo}
-            key={currentVideo.videoId}
-          />
-          {/* <VideosList videos={loadedVideos} /> */}
-        </section>
+        <div>
+          <section>
+            <VideoFrame
+              width="500"
+              height="300"
+              video={currentVideo}
+              key={currentVideo.videoId}
+            />
+            {/* <VideosList videos={loadedVideos} /> */}
+          </section>
+          <section>
+            <SearchVideoContainer
+              videos={loadedVideos}
+              onClick={loadClickedVideo}
+            />
+          </section>
+        </div>
         <aside>
           <h2>RECENT UPLOADS</h2>
           <VideoThumbnailList
