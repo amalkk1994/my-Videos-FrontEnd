@@ -70,8 +70,13 @@ const VideoContainer = () => {
         <aside>
           <h2 className={classes.recentUploadsTitle}>RECENT UPLOADS</h2>
           <VideoThumbnailList
-            videos={loadedVideos}
+            videos={loadedVideos.slice(0, 10)}
             onClick={loadClickedVideo}
+            style={
+              {
+                /*transform: "scale(0.9)" */
+              }
+            }
           />
         </aside>
       </div>

@@ -11,6 +11,7 @@ const VideoThumbnailList = (props) => {
               onClick={props.onClick}
               key={video.videoId}
               style={props.style}
+              imgStyle={props.imgStyle}
             />
           );
         })}

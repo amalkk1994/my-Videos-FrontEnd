@@ -24,7 +24,17 @@ const SearchVideoContainer = (props) => {
     }
   };
 
-  const style = { flexDirection: "column", width: "200px" };
+  const style = {
+    flexDirection: "column",
+    width: "200px",
+    paddingLeft: "0px",
+    paddingRight: "0px",
+    gap: "10px",
+  };
+
+  const thumbnailStyle = {
+    width: "100%",
+  };
 
   return (
     <>
@@ -40,6 +50,7 @@ const SearchVideoContainer = (props) => {
           videos={filteredVideos}
           onClick={props.onClick}
           style={style}
+          imgStyle={thumbnailStyle}
         />
       </section>
     </>
