@@ -9,10 +9,10 @@
 
 @media (max-width: 800px) {
   .videoFrameMain {
-    max-width: 405px;
+    max-width: 355px;
   }
   .videoFrameMain iframe {
-    max-width: 400px;
+    max-width: 350px;
     height: 250px;
   }
 }
