@@ -19,12 +19,6 @@ body {
   column-gap: 20px;
 }
 
-@media (max-width: 1080px) {
-  .containerMain {
-    grid-template-columns: 1fr;
-  }
-}
-
 @media (max-width: 800px) {
   .containerMain {
     display: block;
