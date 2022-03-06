@@ -3,13 +3,22 @@
   background-color: coral;
   */
   display: flex;
-  width: auto;
   padding: 40px;
   margin-bottom: 20px;
   box-shadow: 0px 20px 30px 0px rgb(0 0 0 / 7%);
   border-radius: 12px;
   transition: transform 0.2s;
   background-color: white;
+}
+
+@media (max-width: 800px) {
+  .card {
+    max-width: 350px;
+  }
+
+  .description {
+    margin-top: 20px;
+  }
 }
 
 .card:hover {

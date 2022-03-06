@@ -4,6 +4,12 @@
   gap: 30px;
 }
 
+@media (max-width: 800px) {
+  .searchContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .searchHeader {
   text-align: center;
 }

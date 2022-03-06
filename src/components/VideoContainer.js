@@ -10,7 +10,9 @@ const VideoContainer = () => {
   const [loadedVideos, setLoadedVideos] = useState([]);
   const [currentVideo, setCurrentVideo] = useState(null);
   useEffect(() => {
-    fetch("http://127.0.0.1:3001/api/v1/videos")
+    // changing fetch to firebase for testing
+    //fetch("http://127.0.0.1:3001/api/v1/videos")
+    fetch("https://myvideos-api-v1-default-rtdb.firebaseio.com/videos.json")
       .then((response) => response.json())
       .then((data) => {
         console.log("output", data.items[0].id.videoId);
@@ -53,8 +55,9 @@ const VideoContainer = () => {
         <div>
           <section>
             <VideoFrame
-              width="500"
-              height="300"
+              width="500px"
+              height="300px"
+              maxWidth="505px"
               video={currentVideo}
               key={currentVideo.videoId}
             />

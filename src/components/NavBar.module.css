@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 60px;
+  width: 100%;
 }
 
 .navBar a {
@@ -27,4 +28,10 @@
 
 .navLinks {
   align-self: flex-end;
+}
+
+@media (max-width: 800px) {
+  .navLinks {
+    display: none;
+  }
 }

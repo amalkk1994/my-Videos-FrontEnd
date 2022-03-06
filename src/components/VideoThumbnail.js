@@ -1,11 +1,11 @@
 import classes from "./VideoThumbnail.module.css";
 const VideoThumbnail = (props) => {
   function triggerOnClickFunc(video) {
-    props.onClick(video);
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
+    props.onClick(video);
   }
 
   return (
