@@ -6,7 +6,8 @@
 
 @media (max-width: 800px) {
   .searchContainer {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 }
 

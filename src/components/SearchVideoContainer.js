@@ -26,7 +26,7 @@ const SearchVideoContainer = (props) => {
 
   const style = {
     flexDirection: "column",
-    width: "200px",
+    /* width: "200px", */
     paddingLeft: "0px",
     paddingRight: "0px",
     gap: "10px",

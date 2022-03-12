@@ -53,7 +53,7 @@ const VideoContainer = () => {
     return (
       <div className={classes.containerMain}>
         <div>
-          <section>
+          <section className={classes.frameSection}>
             <VideoFrame
               width="500px"
               height="300px"
